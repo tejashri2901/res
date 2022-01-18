@@ -1,0 +1,184 @@
+*{
+    font-family: 'Outfit', sans-serif;
+    color: black;
+    font-size: 1.1rem;
+
+}
+body{
+    background-color: #212529;
+    height: 120%;
+}
+
+
+
+
+
+
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+#sidebar a:active{
+  background-color: #aaa;
+  border-bottom: 2px solid rgb(17, 89, 145);
+  border-left: 2px solid rgb(17, 89, 145);
+}
+#sidebar a:hover{
+  background-color: #73a3d3;
+  border-bottom: 2px solid rgb(17, 89, 145);
+  border-left: 2px solid rgb(17, 89, 145);
+}
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSE
+* ==========================================
+*
+*/
+
+body {
+  /* background: #599fd9; */
+  /* background: -webkit-linear-gradient(to right, #599fd9, #c2e59c); */
+  /* background: linear-gradient(to right, #599fd9, #c2e59c); */
+  min-height: 100vh;
+  overflow-x: hidden;
+color:black 
+}
+
+.separator {
+  margin: 3rem 0;
+  border-bottom: 1px dashed #fff;
+}
+
+.text-uppercase {
+  letter-spacing: 0.1em;
+}
+
+.text-gray {
+  color: #aaa;
+}
+
+
+
+
+
+
+/* first container */
+
+#first-container{
+display: flex;
+font-weight: bold;
+  height: 30rem;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  background-image: url("Screenshot\ \(34\).png") ;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size:auto; 
+opacity: .9;
+}
+
+
+
+
+
+
+.progress{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+#second-container img{
+  margin: 2.5rem;
+  /* border-radius: 20% 20%; */
+  border: 3px solid rgb(17, 89, 145);
+  padding: 7px;
+  
+}
+
+.headings{
+  display: inline-block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border-bottom: 3px solid rgba(12, 160, 206, 0.87);
+  position: initial;
+  right: 70%;
+}
+
+#about-container{
+  background-color: #dbecff70;
+  padding: 1rem;
+}
+.col ul{
+  border-left: 2px solid #140c0d;
+}
+
+ul{
+  list-style:none ;
+}
+#resume-container li a{
+ text-decoration: none;
+ color: black;
+
+}
+
+
+
+#projects-container img{
+  width: 15rem;
+
+height: auto;}
